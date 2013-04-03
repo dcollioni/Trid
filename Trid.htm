@@ -62,11 +62,12 @@
         #menu div
         {
             background-color: #ACF;
-            border: 1px solid #8AD;
+            background-image: url(Images/sprites2.png);
+            background-repeat: no-repeat;
+            border: 1px solid #79C;
             border-radius: 200px;
             box-shadow: 0 0 10px #BBB;
-            color: #454545;
-            color: #57A;
+            color: #247;
             cursor: pointer;
             display: inline-block;
             font-family: "Segoe UI Semibold";
@@ -75,70 +76,76 @@
             line-height: 100px;
             margin: 0 45px;
             height: 200px;
+            opacity: .8;
             text-align: center;
-            text-shadow: 1px 1px #888;
-            text-shadow: 1px 1px #BDF;
+            text-shadow: 1px 1px #CCC;
             width: 200px;
+            transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s, opacity .4s;
+            -moz-transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s, opacity .4s;
+            -webkit-transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s, opacity .4s;
+            -o-transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s, opacity .4s;
         }
-        
         #menu div:hover
         {
-            border-color: #79C;
             box-shadow: 0 0 40px #BBB;
-            color: #247;
-            text-shadow: 1px 1px #CCC;
+            opacity: 1;
         }
-        
-        #menu div
+        #menu div:active
         {
-            transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s;
-            -moz-transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s;
-            -webkit-transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s;
-            -o-transition: box-shadow .4s, border .4s, background-image .6s, color .4s, text-shadow .4s;
+            box-shadow: 0 0 40px #DDD inset;
+        }
+        #menu div .mark
+        {
+            background-image: url(Images/sprites2.png);
+            display: block;
+            height: 100px;
+            margin: -20px 0 0 75px;
+            opacity: 0;
+            width: 100px;
+            transition: opacity .4s;
+            -moz-transition: opacity .4s;
+            -webkit-transition: opacity .4s;
+            -o-transition: opacity .4s;
+        }
+        #menu div:hover .mark
+        {
+            opacity: .6;
         }
         
         #menu .left
         {
-            background-image: url(Images/1364514232_users4.png);
-            background-repeat: no-repeat;
             background-position: 75px 80px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             border-right-style: dashed;
         }
-        #menu .left:hover,
-        #menu .left:active
+        #menu .left .mark
         {
-            background-image: url(Images/1364514232_users7.png);
+            background-position: 0px -300px;
         }
         
         #menu .center
         {
-            background-image: url(Images/1364514239_favourites3.png);
-            background-repeat: no-repeat;
-            background-position: 75px 80px;
+            background-position: -225px 80px;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
             border-top-style: dashed;
         }
-        #menu .center:hover,
-        #menu .center:active
+        #menu .center .mark
         {
-            background-image: url(Images/1364514239_favourites5.png);
+            background-position: -300px -300px;
         }
         
         #menu .right
         {
-            background-image: url(Images/1364514243_earth3.png);
-            background-repeat: no-repeat;
-            background-position: 75px 80px;
+            background-position: -525px 80px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             border-left-style: dashed;
         }
-        #menu .right:hover
+        #menu .right .mark
         {
-            background-image: url(Images/1364514243_earth5.png);
+            background-position: -600px -300px;
         }
     </style>
 </head>
@@ -152,12 +159,15 @@
     <div id="menu">
         <div class="left">
             Somos
+            <span class="mark"></span>
         </div>
         <div class="center">
             Gostamos
+            <span class="mark"></span>
         </div>
         <div class="right">
             Estamos
+            <span class="mark"></span>
         </div>
     </div>
 </body>
