@@ -7,9 +7,17 @@
     <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
 
     <style type="text/css">
+        @font-face
+        {
+            font-family: SegoeUISemiBold;
+            src: url('Fonts/seguisb.ttf'),
+                 url('Fonts/seguisb.eot');
+        }
+        
         body
         {
             background-color: #F4F4F4;
+            font-family: SegoeUISemiBold, Sans-Serif;
             margin: 0;
         }
         
@@ -73,9 +81,7 @@
             color: #247;
             cursor: pointer;
             display: inline-block;
-            font-family: "Segoe UI Semibold";
             font-size: 20pt;
-            font-weight: bold;
             line-height: 100px;
             margin: 0 45px;
             height: 200px;
@@ -113,6 +119,10 @@
         #menu div:hover .mark
         {
             opacity: .6;
+        }
+        #menu div:active .mark
+        {
+            opacity: 1;
         }
         
         #menu .left
