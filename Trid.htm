@@ -10,8 +10,13 @@
         @font-face
         {
             font-family: SegoeUISemiBold;
-            src: url('Fonts/seguisb.ttf'),
-                 url('Fonts/seguisb.eot');
+            src: url('Fonts/seguisb.ttf'), url('Fonts/seguisb.eot');
+        }
+        
+        @font-face
+        {
+            font-family: SegoeUILight;
+            src: url('Fonts/segoeuil.ttf');
         }
         
         body
@@ -21,12 +26,28 @@
             margin: 0;
         }
         
+        #wrapper
+        {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .page
+        {
+            border: 0px solid #000;
+            height: 550px;
+            margin-top: -275px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+        
         #header
         {
             background-image: url(Images/wavegrid.png);
             border-top: 1px solid #DDD;
             border-bottom: 1px solid #DDD;
-            margin: 50px 0;
+            margin-bottom: 50px;
             width: 100%;
             border-top-color: #CCC;
             border-bottom-color: #CCC;
@@ -36,14 +57,6 @@
             -webkit-user-select: none;
             user-select: none;
         }
-        /*
-        #header:hover
-        {
-            border-top-color: #CCC;
-            border-bottom-color: #CCC;
-            box-shadow: 0 0 50px #E6E6E6;
-        }
-        */
         
         #header
         {
@@ -96,12 +109,13 @@
         }
         #menu div:hover
         {
-            box-shadow: 0 0 40px #BBB;
+            box-shadow: 0 0 20px #BBB;
             opacity: 1;
         }
         #menu div:active
         {
-            box-shadow: 0 0 40px #FFF;
+            box-shadow: 0 0 20px #FFF;
+            color: #136;
         }
         #menu div .mark
         {
@@ -160,27 +174,156 @@
         {
             background-position: -600px -300px;
         }
+        
+        #home
+        {
+            display: none;
+        }
+        
+        #weare
+        {
+            display: block;
+        }
+        
+        #weare .header
+        {
+            background-image: url(Images/wavegrid.png);
+            border-top: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            box-shadow: 0 0 6px #DDD;
+            height: 112px;
+            text-align: center;
+        }
+        
+        #weare .header .title
+        {
+            background: url('Images/Trid-logo-100.png') no-repeat;
+            height: 100%;
+            margin: 0 auto;
+            width: 260px;
+        }
+        
+        #weare .header .title h1
+        {
+            color: #606060;
+            display: inline;
+            font-size: 30pt;
+            line-height: 106px;
+            margin-left: 120px;
+            text-shadow: 1px 1px #909090;
+        }
+        
+        #weare .content
+        {
+            color: #757575;
+            cursor: default;
+            font-family: SegoeUILight;
+            font-size: 14pt;
+            margin: 40px auto;
+            text-shadow: 1px 1px #E0E0E0;
+            width: 1000px;
+        }
+        #weare .content div
+        {
+            transition: color .4s;
+            -moz-transition: color .4s;
+            -webkit-transition: color .4s;
+            -o-transition: color .4s;
+        }
+        
+        #weare .content .first
+        {
+            background: url('Images/configuration_60_filled.png') no-repeat;
+            border-bottom: 1px dashed #CCC;
+            height: 70px;
+            text-align: center;
+        }
+        #weare .content .first p
+        {
+            line-height: 60px;
+            margin-left: 20px;
+        }
+        #weare .content .first:hover
+        {
+            color: #404040;
+        }
+        
+        #weare .content .second
+        {
+            background: url('Images/comment_60_filled.png') no-repeat;
+            border-bottom: 1px dashed #CCC;
+            height: 70px;
+            text-align: center;
+        }
+        #weare .content .second p
+        {
+            line-height: 60px;
+            margin-left: 20px;
+        }
+        #weare .content .second:hover
+        {
+            color: #404040;
+        }
+        
+        #weare .content .third
+        {
+            background: url('Images/admin_60_filled.png') no-repeat;
+            height: 70px;
+            text-align: center;
+        }
+        #weare .content .third p
+        {
+            line-height: 60px;
+            margin-left: 20px;
+        }
+        #weare .content .third:hover
+        {
+            color: #404040;
+        }
     </style>
 </head>
 <body>
-    <div id="header">
-        <div id="logo">
-            <img src="Images/Trid-logo-150.png" alt="Trid logo" />
-        </div>
-    </div>
+    <div id="wrapper">
+        <div class="page" id="home">
+            <div id="header">
+                <div id="logo">
+                    <img src="Images/Trid-logo-200.png" alt="Trid logo" />
+                </div>
+            </div>
 
-    <div id="menu">
-        <div class="left">
-            Somos
-            <span class="mark"></span>
+            <div id="menu">
+                <div class="left">
+                    Somos
+                    <span class="mark"></span>
+                </div>
+                <div class="center">
+                    Gostamos
+                    <span class="mark"></span>
+                </div>
+                <div class="right">
+                    Estamos
+                    <span class="mark"></span>
+                </div>
+            </div>
         </div>
-        <div class="center">
-            Gostamos
-            <span class="mark"></span>
-        </div>
-        <div class="right">
-            Estamos
-            <span class="mark"></span>
+        <div class="page" id="weare">
+            <div class="header">
+                <div class="title">
+                    <h1>Somos</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="first">
+                    <p>Desenvolvedores movidos pela inovação que acreditam no poder da tecnologia em transformar o mundo.</p>
+                </div>
+                <div class="second">
+                    <p>Pessoas que discutem novas ideias e querem propor uma mudança positiva nas atuais soluções de TI.</p>
+                </div>
+                <div class="third">
+                    <p>Profissionais com experiência em desenvolvimento de sistemas Web apaixonados pelo que fazem.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
