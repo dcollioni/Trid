@@ -49,7 +49,7 @@
             width: 200px;
         }
         
-        #aboutUs .header
+        #contact .header
         {
             background-image: url(Images/wavegrid.png);
             border-top: 1px solid #CCC;
@@ -62,7 +62,7 @@
             user-select: none;
         }
         
-        #aboutUs .header .title
+        #contact .header .title
         {
             background: url('Images/Trid-logo-100.png') no-repeat;
             cursor: default;
@@ -71,7 +71,7 @@
             width: 260px;
         }
         
-        #aboutUs .header .title h1
+        #contact .header .title h1
         {
             color: #404040;
             display: inline;
@@ -81,80 +81,61 @@
             text-shadow: 1px 1px #909090;
         }
         
-        #aboutUs .content
+        #contact .content
         {
             border: 0px solid blue;
             color: #757575;
             cursor: default;
             font-family: SegoeUILight;
             font-size: 14pt;
+            height: 300px;
             margin: 40px auto;
+            margin-bottom: 0;
+            text-align: center;
             text-shadow: 1px 1px #E0E0E0;
             width: 980px;
         }
-        #aboutUs .content div
-        {
-            transition: color .4s;
-            -moz-transition: color .4s;
-            -webkit-transition: color .4s;
-            -o-transition: color .4s;
-        }
-        #aboutUs .content .strong
+        #contact .content .strong
         {
             color: #111;
         }
         
-        #aboutUs .content .first
+        #contact .content .social
         {
-            background: url('Images/aboutus_sprite.png') no-repeat;
-            border-bottom: 1px dashed #CCC;
-            height: 70px;
-            text-align: center;
+            border: 1px solid red;
+            float: left;
+            margin-left: 50px;
+            width: 100px;
         }
-        #aboutUs .content .first p
+        #contact .content .social a
         {
-            line-height: 50px;
-            margin-left: 30px;
+            display: block;
+            margin: 10px;
+            text-align: left;
         }
-        #aboutUs .content .first:hover
+        #contact .content .social img
         {
-            color: #404040;
-        }
-        
-        #aboutUs .content .second
-        {
-            background: url('Images/aboutus_sprite.png') no-repeat 0 -70px;
-            border-bottom: 1px dashed #CCC;
-            height: 70px;
-            text-align: center;
-        }
-        #aboutUs .content .second p
-        {
-            line-height: 50px;
-            margin-left: 30px;
-        }
-        #aboutUs .content .second:hover
-        {
-            color: #404040;
+            border: none;
         }
         
-        #aboutUs .content .third
+        #contact .content .form
         {
-            background: url('Images/aboutus_sprite.png') no-repeat 0 -140px;
-            height: 70px;
-            text-align: center;
+            border: 1px solid green;
+            font-size: 12pt;
+            margin: 0 auto;
+            text-align: left;
+            width: 650px;
         }
-        #aboutUs .content .third p
+        #contact .content .form form
         {
-            line-height: 50px;
-            margin-left: 30px;
+            margin-left: 50px;
         }
-        #aboutUs .content .third:hover
+        #contact .content .form label
         {
-            color: #404040;
+            display: block;
         }
         
-        #aboutUs .footer
+        #contact .footer
         {
             border: 0px solid red;
             color: #48D;
@@ -162,12 +143,13 @@
             font-family: SegoeUILight;
             font-size: 14pt;
             margin: 40px auto;
+            margin-top: 0;
             text-align: center;
             text-shadow: 1px 1px #DDD;
             width: 980px;
         }
         
-        #aboutUs .footer a
+        #contact .footer a
         {
             color: #48D;
             font-family: SegoeUISemiBold;
@@ -179,16 +161,16 @@
             -o-transition: text-shadow .4s;
         }
         
-        #aboutUs .footer a:hover
+        #contact .footer a:hover
         {
             text-shadow: 1px 1px #AAA;
         }
         
-        #aboutUs .back
+        #contact .back
         {
             font-family: SegoeUILight;
             font-size: 14pt;
-            margin: 50px auto;
+            margin: 40px auto;
             margin-bottom: 0;
             text-align: right;
             width: 980px;
@@ -196,7 +178,7 @@
             -webkit-user-select: none;
             user-select: none;
         }
-        #aboutUs .back a
+        #contact .back a
         {
             background-color: #888;
             background-image: url('Images/arrow_top_25.png');
@@ -214,14 +196,14 @@
             -webkit-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
             -o-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
         }
-        #aboutUs .back a:hover
+        #contact .back a:hover
         {
             background-color: #777;
             border-color: #666;
             box-shadow: 0px 0px 10px #AAA;
             text-shadow: 1px 1px #444;
         }
-        #aboutUs .back a:active
+        #contact .back a:active
         {
             box-shadow: 0px 0px 10px #555 inset;
         }
@@ -229,28 +211,41 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="page" id="aboutUs">
+        <div class="page" id="contact">
             <div class="header">
                 <div class="title">
-                    <h1>Somos</h1>
+                    <h1>Estamos</h1>
                 </div>
             </div>
 
             <div class="content">
-                <div class="first">
-                    <p>Desenvolvedores <span class="strong">movidos pela inovação</span> que acreditam no poder da tecnologia em transformar o mundo.</p>
+                <div>
+                    <p>
+                        O mundo é a nossa casa. Estamos online em diversas plataformas. Quer nos conhecer melhor?
+                    </p>
                 </div>
-                <div class="second">
-                    <p>Pessoas que discutem novas ideias e querem propor uma <span class="strong">mudança positiva</span> nas atuais soluções de TI.</p>
+                <div class="social">
+                    <a href="http://facebook.com/trid" target="_blank"><img src="Images/facebook.png" alt="Facebook" /></a>
+                    <a href="http://twitter.com/trid" target="_blank"><img src="Images/twitter.png" alt="Facebook" /></a>
+                    <a href="http://linkedin.com/trid" target="_blank"><img src="Images/linkedin.png" alt="Facebook" /></a>
                 </div>
-                <div class="third">
-                    <p>Profissionais com experiência em desenvolvimento de softwares <span class="strong">apaixonados pelo que fazem</span>.</p>
+                <div class="form">
+                    <form action="Contact/Send" method="post">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" />
+                        
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" />
+                        
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" cols="50" rows="4"></textarea>
+                    </form>
                 </div>
             </div>
 
             <div class="footer">
                 <div>
-                    Saiba também o que <a href="Services.htm">fazemos</a> e onde <a href="contact.htm">estamos</a>.
+                    Já sabe quem <a href="aboutUs.htm">somos</a> e onde <a href="contact.htm">estamos</a>?
                 </div>
             </div>
 
