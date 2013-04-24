@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Trid</title>
+
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+
+    <style type="text/css">
+        @font-face
+        {
+            font-family: SegoeUISemiBold;
+            src: url('Fonts/seguisb.ttf'), url('Fonts/seguisb.eot');
+        }
+        
+        @font-face
+        {
+            font-family: SegoeUILight;
+            src: url('Fonts/segoeuil.ttf'), url('Fonts/segoeuil.eot');
+        }
+        
+        body
+        {
+            background-color: #F4F4F4;
+            font-family: SegoeUISemiBold, Sans-Serif;
+            margin: 0;
+        }
+        
+        #wrapper
+        {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .page
+        {
+            border: 0px solid #000;
+            height: 550px;
+            margin-top: -275px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+        
+        #logo
+        {
+            margin: 0 auto;
+            padding: 20px;
+            width: 200px;
+        }
+        
+        #aboutUs .header
+        {
+            background-image: url(Images/wavegrid.png);
+            border-top: 1px solid #CCC;
+            border-bottom: 1px solid #CCC;
+            box-shadow: 0 0 10px #DDD;
+            height: 112px;
+            text-align: center;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        
+        #aboutUs .header .title
+        {
+            background: url('Images/Trid-logo-100.png') no-repeat;
+            cursor: default;
+            height: 100%;
+            margin: 0 auto;
+            width: 260px;
+        }
+        
+        #aboutUs .header .title h1
+        {
+            color: #404040;
+            display: inline;
+            font-size: 30pt;
+            line-height: 106px;
+            margin-left: 120px;
+            text-shadow: 1px 1px #909090;
+        }
+        
+        #aboutUs .content
+        {
+            border: 0px solid blue;
+            color: #757575;
+            cursor: default;
+            font-family: SegoeUILight;
+            font-size: 14pt;
+            margin: 40px auto;
+            text-shadow: 1px 1px #E0E0E0;
+            width: 980px;
+        }
+        #aboutUs .content div
+        {
+            transition: color .4s;
+            -moz-transition: color .4s;
+            -webkit-transition: color .4s;
+            -o-transition: color .4s;
+        }
+        #aboutUs .content .strong
+        {
+            color: #111;
+        }
+        
+        #aboutUs .content .first
+        {
+            background: url('Images/configuration_60_filled.png') no-repeat;
+            border-bottom: 1px dashed #CCC;
+            height: 70px;
+            text-align: center;
+        }
+        #aboutUs .content .first p
+        {
+            line-height: 50px;
+            margin-left: 30px;
+        }
+        #aboutUs .content .first:hover
+        {
+            color: #404040;
+        }
+        
+        #aboutUs .content .second
+        {
+            background: url('Images/comment_60_filled.png') no-repeat;
+            border-bottom: 1px dashed #CCC;
+            height: 70px;
+            text-align: center;
+        }
+        #aboutUs .content .second p
+        {
+            line-height: 50px;
+            margin-left: 30px;
+        }
+        #aboutUs .content .second:hover
+        {
+            color: #404040;
+        }
+        
+        #aboutUs .content .third
+        {
+            background: url('Images/admin_60_filled.png') no-repeat;
+            height: 70px;
+            text-align: center;
+        }
+        #aboutUs .content .third p
+        {
+            line-height: 50px;
+            margin-left: 30px;
+        }
+        #aboutUs .content .third:hover
+        {
+            color: #404040;
+        }
+        
+        #aboutUs .footer
+        {
+            border: 0px solid red;
+            color: #48D;
+            cursor: default;
+            font-family: SegoeUILight;
+            font-size: 14pt;
+            margin: 40px auto;
+            text-align: center;
+            text-shadow: 1px 1px #DDD;
+            width: 980px;
+        }
+        
+        #aboutUs .footer a
+        {
+            color: #48D;
+            font-family: SegoeUISemiBold;
+            text-decoration: none;
+            
+            transition: text-shadow .4s;
+            -moz-transition: text-shadow .4s;
+            -webkit-transition: text-shadow .4s;
+            -o-transition: text-shadow .4s;
+        }
+        
+        #aboutUs .footer a:hover
+        {
+            text-shadow: 1px 1px #AAA;
+        }
+        
+        #aboutUs .back
+        {
+            font-family: SegoeUILight;
+            font-size: 14pt;
+            margin: 50px auto;
+            margin-bottom: 0;
+            text-align: right;
+            width: 980px;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        #aboutUs .back a
+        {
+            background-color: #888;
+            background-image: url('Images/arrow_top_25.png');
+            background-repeat: no-repeat;
+            border: 1px solid #777;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px #CCC;
+            color: #DDD;
+            padding: 2px 10px 2px 25px;
+            text-decoration: none;
+            text-shadow: 1px 1px #666;
+            
+            transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
+            -moz-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
+            -webkit-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
+            -o-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
+        }
+        #aboutUs .back a:hover
+        {
+            background-color: #777;
+            border-color: #666;
+            box-shadow: 0px 0px 10px #AAA;
+            text-shadow: 1px 1px #444;
+        }
+        #aboutUs .back a:active
+        {
+            box-shadow: 0px 0px 10px #555 inset;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="page" id="aboutUs">
+            <div class="header">
+                <div class="title">
+                    <h1>Somos</h1>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="first">
+                    <p>Desenvolvedores <span class="strong">movidos pela inovação</span> que acreditam no poder da tecnologia em transformar o mundo.</p>
+                </div>
+                <div class="second">
+                    <p>Pessoas que discutem novas ideias e querem propor uma <span class="strong">mudança positiva</span> nas atuais soluções de TI.</p>
+                </div>
+                <div class="third">
+                    <p>Profissionais com experiência em desenvolvimento de sistemas Web <span class="strong">apaixonados pelo que fazem</span>.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>
+                    Saiba também o que <a href="services.htm">fazemos</a> e onde <a href="contact.htm">estamos</a>.
+                </div>
+            </div>
+
+            <div class="back">
+                <a href="trid.htm">Subir</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
