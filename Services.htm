@@ -49,7 +49,7 @@
             width: 200px;
         }
         
-        #aboutUs .header
+        #services .header
         {
             background-image: url(Images/wavegrid.png);
             border-top: 1px solid #CCC;
@@ -62,7 +62,7 @@
             user-select: none;
         }
         
-        #aboutUs .header .title
+        #services .header .title
         {
             background: url('Images/Trid-logo-100.png') no-repeat;
             cursor: default;
@@ -71,7 +71,7 @@
             width: 260px;
         }
         
-        #aboutUs .header .title h1
+        #services .header .title h1
         {
             color: #404040;
             display: inline;
@@ -81,80 +81,84 @@
             text-shadow: 1px 1px #909090;
         }
         
-        #aboutUs .content
+        #services .content
         {
+            background: url('Images/services_sprite2.png') no-repeat 240px 190px;
             border: 0px solid blue;
             color: #757575;
             cursor: default;
             font-family: SegoeUILight;
             font-size: 14pt;
+            height: 300px;
             margin: 40px auto;
+            margin-bottom: 0;
+            text-align: center;
             text-shadow: 1px 1px #E0E0E0;
             width: 980px;
         }
-        #aboutUs .content div
+        #services .content div
         {
             transition: color .4s;
             -moz-transition: color .4s;
             -webkit-transition: color .4s;
             -o-transition: color .4s;
         }
-        #aboutUs .content .strong
+        #services .content .strong
         {
             color: #111;
         }
         
-        #aboutUs .content .first
+        #services .content .first
         {
             background: url('Images/aboutus_sprite.png') no-repeat;
             border-bottom: 1px dashed #CCC;
             height: 70px;
             text-align: center;
         }
-        #aboutUs .content .first p
+        #services .content .first p
         {
             line-height: 50px;
             margin-left: 30px;
         }
-        #aboutUs .content .first:hover
+        #services .content .first:hover
         {
             color: #404040;
         }
         
-        #aboutUs .content .second
+        #services .content .second
         {
             background: url('Images/aboutus_sprite.png') no-repeat 0 -70px;
             border-bottom: 1px dashed #CCC;
             height: 70px;
             text-align: center;
         }
-        #aboutUs .content .second p
+        #services .content .second p
         {
             line-height: 50px;
             margin-left: 30px;
         }
-        #aboutUs .content .second:hover
+        #services .content .second:hover
         {
             color: #404040;
         }
         
-        #aboutUs .content .third
+        #services .content .third
         {
             background: url('Images/aboutus_sprite.png') no-repeat 0 -140px;
             height: 70px;
             text-align: center;
         }
-        #aboutUs .content .third p
+        #services .content .third p
         {
             line-height: 50px;
             margin-left: 30px;
         }
-        #aboutUs .content .third:hover
+        #services .content .third:hover
         {
             color: #404040;
         }
         
-        #aboutUs .footer
+        #services .footer
         {
             border: 0px solid red;
             color: #48D;
@@ -162,12 +166,13 @@
             font-family: SegoeUILight;
             font-size: 14pt;
             margin: 40px auto;
+            margin-top: 0;
             text-align: center;
             text-shadow: 1px 1px #DDD;
             width: 980px;
         }
         
-        #aboutUs .footer a
+        #services .footer a
         {
             color: #48D;
             font-family: SegoeUISemiBold;
@@ -179,16 +184,16 @@
             -o-transition: text-shadow .4s;
         }
         
-        #aboutUs .footer a:hover
+        #services .footer a:hover
         {
             text-shadow: 1px 1px #AAA;
         }
         
-        #aboutUs .back
+        #services .back
         {
             font-family: SegoeUILight;
             font-size: 14pt;
-            margin: 50px auto;
+            margin: 40px auto;
             margin-bottom: 0;
             text-align: right;
             width: 980px;
@@ -196,7 +201,7 @@
             -webkit-user-select: none;
             user-select: none;
         }
-        #aboutUs .back a
+        #services .back a
         {
             background-color: #888;
             background-image: url('Images/arrow_top_25.png');
@@ -214,14 +219,14 @@
             -webkit-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
             -o-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
         }
-        #aboutUs .back a:hover
+        #services .back a:hover
         {
             background-color: #777;
             border-color: #666;
             box-shadow: 0px 0px 10px #AAA;
             text-shadow: 1px 1px #444;
         }
-        #aboutUs .back a:active
+        #services .back a:active
         {
             box-shadow: 0px 0px 10px #555 inset;
         }
@@ -229,28 +234,33 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="page" id="aboutUs">
+        <div class="page" id="services">
             <div class="header">
                 <div class="title">
-                    <h1>Somos</h1>
+                    <h1>Fazemos</h1>
                 </div>
             </div>
 
             <div class="content">
-                <div class="first">
-                    <p>Desenvolvedores <span class="strong">movidos pela inovação</span> que acreditam no poder da tecnologia em transformar o mundo.</p>
-                </div>
-                <div class="second">
-                    <p>Pessoas que discutem novas ideias e querem propor uma <span class="strong">mudança positiva</span> nas atuais soluções de TI.</p>
-                </div>
-                <div class="third">
-                    <p>Profissionais com experiência em desenvolvimento de sistemas Web <span class="strong">apaixonados pelo que fazem</span>.</p>
+                <div>
+                    <p>
+                        Softwares e aplicativos que <span class="strong">facilitam a vida</span> das pessoas de uma maneira simples.
+                    </p>
+                    <p>
+                        Desde <span class="strong">sites</span> e <span class="strong">sistemas</span> Web a <span class="strong">apps</span> para disposiivos móveis e <span class="strong">extensões</span> para navegadores.
+                    </p>
+                    <p>
+                        Buscamos sempre <span class="strong">excelência</span> nos produtos desenvolvidos, trabalhando com as últimas tecnologias.
+                    </p>
+                    <p>
+                        E, principalmente, <span class="strong">amamos</span> tudo o que fazemos.
+                    </p>
                 </div>
             </div>
 
             <div class="footer">
                 <div>
-                    Saiba também o que <a href="Services.htm">fazemos</a> e onde <a href="contact.htm">estamos</a>.
+                    Já sabe quem <a href="aboutUs.htm">somos</a> e onde <a href="contact.htm">estamos</a>?
                 </div>
             </div>
 
