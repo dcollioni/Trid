@@ -34,7 +34,7 @@
         
         .page
         {
-            border: 0px solid #000;
+            border: 1px solid #000;
             height: 550px;
             margin-top: -275px;
             position: absolute;
@@ -102,10 +102,10 @@
         
         #contact .content .social
         {
-            border: 1px solid red;
+            border: 0px solid red;
             float: left;
             margin-left: 50px;
-            width: 100px;
+            width: 80px;
         }
         #contact .content .social a
         {
@@ -120,7 +120,7 @@
         
         #contact .content .form
         {
-            border: 1px solid green;
+            border: 0px solid green;
             font-size: 12pt;
             margin: 0 auto;
             text-align: left;
@@ -128,11 +128,61 @@
         }
         #contact .content .form form
         {
-            margin-left: 50px;
+            box-sizing: border-box;
+            margin-left: 125px;
+            width: 400px;
         }
         #contact .content .form label
         {
             display: block;
+            margin-top: 10px;
+        }
+        #contact .content .form input,
+        #contact .content .form textarea
+        {
+            border: 1px solid #AAA;
+            border-radius: 2px;
+            box-sizing: border-box;
+            font-family: SegoeUILight;
+            outline: none;
+            padding: 5px;
+            width: 300px;
+        }
+        #contact .content .form textarea
+        {
+            resize: none;
+            width: 400px;
+        }
+        #contact .content .form .buttons
+        {
+            text-align: right;
+        }
+        #contact .content .form .buttons input
+        {
+            color: #888;
+            display: inline-block;
+            font-family: SegoeUISemiBold;
+            font-size: 12pt;
+            margin-top: 10px;
+            text-shadow: 1px 1px #CCC;
+            width: 80px;
+        }
+        #contact .content .form .buttons input[type=reset]
+        {
+            background-color: #FFF;
+            box-shadow: 0 0 5px #DDD;
+            margin-right: 10px;
+        }
+        #contact .content .form .buttons input[type=reset]:active
+        {
+            box-shadow: 0 0 5px #DDD inset;
+        }
+        #contact .content .form .buttons input[type=submit]
+        {
+            border-color: #666;
+            color: #DDD;
+            background-color: #48D;
+            text-shadow: 1px 1px #666;
         }
         
         #contact .footer
@@ -143,7 +193,6 @@
             font-family: SegoeUILight;
             font-size: 14pt;
             margin: 40px auto;
-            margin-top: 0;
             text-align: center;
             text-shadow: 1px 1px #DDD;
             width: 980px;
@@ -170,7 +219,7 @@
         {
             font-family: SegoeUILight;
             font-size: 14pt;
-            margin: 40px auto;
+            margin: -40px auto;
             margin-bottom: 0;
             text-align: right;
             width: 980px;
@@ -238,14 +287,19 @@
                         <input type="text" id="email" name="email" />
                         
                         <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" cols="50" rows="4"></textarea>
+                        <textarea id="message" name="message" cols="50" rows="3"></textarea>
+
+                        <div class="buttons">
+                            <input type="reset" name="clear" value="Limpar" />
+                            <input type="submit" name="send" value="Enviar" />
+                        </div>
                     </form>
                 </div>
             </div>
 
             <div class="footer">
                 <div>
-                    Já sabe quem <a href="aboutUs.htm">somos</a> e onde <a href="contact.htm">estamos</a>?
+                    Descubra quem <a href="aboutUs.htm">somos</a> e o que <a href="services.htm">fazemos</a>.
                 </div>
             </div>
 
