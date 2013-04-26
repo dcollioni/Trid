@@ -34,7 +34,7 @@
         
         .page
         {
-            border: 1px solid #000;
+            border: 0px solid #000;
             height: 550px;
             margin-top: -275px;
             position: absolute;
@@ -160,6 +160,7 @@
         #contact .content .form .buttons input
         {
             color: #888;
+            cursor: pointer;
             display: inline-block;
             font-family: SegoeUISemiBold;
             font-size: 12pt;
@@ -179,10 +180,24 @@
         }
         #contact .content .form .buttons input[type=submit]
         {
-            border-color: #666;
-            color: #DDD;
             background-color: #48D;
+            border-color: #666;
+            box-shadow: 0 0 5px #BBB;
+            color: #DDD;
             text-shadow: 1px 1px #666;
+        }
+        #contact .content .form .buttons input[type=submit]:focus
+        {
+            border-color: #444;
+        }
+        #contact .content .form .buttons input[type=submit]:active
+        {
+            box-shadow: 0 0 5px #777 inset;
+        }
+        #contact .content .form input:focus,
+        #contact .content .form textarea:focus
+        {
+            border-color: #888;
         }
         
         #contact .footer
