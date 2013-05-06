@@ -16,7 +16,7 @@
         @font-face
         {
             font-family: SegoeUILight;
-            src: url('Fonts/segoeuil.ttf');
+            src: url('Fonts/segoeuil.ttf'), url('Fonts/segoeuil.eot');
         }
         
         body
@@ -30,10 +30,9 @@
         #wrapper
         {
             height: 100%;
-            width: 100%;
         }
         
-        .page
+        #home.page
         {
             border: 0px solid #000;
             height: 550px;
@@ -41,11 +40,6 @@
             position: absolute;
             top: 50%;
             width: 100%;
-            
-            transition: top 1s, left 1s;
-            -moz-transition: top 1s, left 1s;
-            -webkit-transition: top 1s, left 1s;
-            -o-transition: top 1s, left 1s;
         }
         
         #header
@@ -148,38 +142,38 @@
             text-decoration: none;
         }
         
-        #menu .left
+        #menu .aboutUs
         {
             background-position: 75px 80px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             border-right-style: dashed;
         }
-        #menu .left .mark
+        #menu .aboutUs .mark
         {
             background-position: 0px -300px;
         }
         
-        #menu .center
+        #menu .services
         {
             background-position: -225px 80px;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
             border-top-style: dashed;
         }
-        #menu .center .mark
+        #menu .services .mark
         {
             background-position: -300px -300px;
         }
         
-        #menu .right
+        #menu .contact
         {
             background-position: -525px 80px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             border-left-style: dashed;
         }
-        #menu .right .mark
+        #menu .contact .mark
         {
             background-position: -600px -300px;
         }
@@ -189,61 +183,6 @@
             margin: 0 auto;
             padding: 20px;
             width: 200px;
-        }
-        
-        #aboutUs .header
-        {
-            background-image: url(Images/wavegrid.png);
-            border-top: 1px solid #CCC;
-            border-bottom: 1px solid #CCC;
-            box-shadow: 0 0 10px #DDD;
-            height: 112px;
-            text-align: center;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-        
-        #aboutUs .header .title
-        {
-            background: url('Images/Trid-logo-100.png') no-repeat;
-            cursor: default;
-            height: 100%;
-            margin: 0 auto;
-            width: 260px;
-        }
-        
-        #aboutUs .header .title h1
-        {
-            color: #404040;
-            display: inline;
-            font-size: 30pt;
-            line-height: 106px;
-            margin-left: 120px;
-            text-shadow: 1px 1px #909090;
-        }
-        
-        #aboutUs .content
-        {
-            border: 0px solid blue;
-            color: #757575;
-            cursor: default;
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
-            margin: 40px auto;
-            text-shadow: 1px 1px #E0E0E0;
-            width: 980px;
-        }
-        #aboutUs .content div
-        {
-            transition: color .4s;
-            -moz-transition: color .4s;
-            -webkit-transition: color .4s;
-            -o-transition: color .4s;
-        }
-        #aboutUs .content .strong
-        {
-            color: #111;
         }
         
         #aboutUs .content .first
@@ -298,258 +237,41 @@
         
         #aboutUs .footer
         {
-            border: 0px solid red;
-            color: #48D;
-            cursor: default;
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
             margin: 40px auto;
-            text-align: center;
-            text-shadow: 1px 1px #DDD;
-            width: 980px;
-        }
-        
-        #aboutUs .footer a
-        {
-            color: #48D;
-            font-family: SegoeUISemiBold, Sans-Serif;
-            text-decoration: none;
-            
-            transition: text-shadow .4s;
-            -moz-transition: text-shadow .4s;
-            -webkit-transition: text-shadow .4s;
-            -o-transition: text-shadow .4s;
-        }
-        
-        #aboutUs .footer a:hover
-        {
-            text-shadow: 1px 1px #AAA;
         }
         
         #aboutUs .back
         {
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
             margin: 50px auto;
             margin-bottom: 0;
-            text-align: right;
-            width: 980px;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-        #aboutUs .back a
-        {
-            background-color: #888;
-            background-image: url('Images/arrow_top_25.png');
-            background-repeat: no-repeat;
-            border: 1px solid #777;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px #CCC;
-            color: #DDD;
-            padding: 2px 10px 2px 25px;
-            text-decoration: none;
-            text-shadow: 1px 1px #666;
             
-            transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-            -moz-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-            -webkit-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-            -o-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-        }
-        #aboutUs .back a:hover
-        {
-            background-color: #777;
-            border-color: #666;
-            box-shadow: 0px 0px 10px #AAA;
-            text-shadow: 1px 1px #444;
-        }
-        #aboutUs .back a:active
-        {
-            box-shadow: 0px 0px 10px #555 inset;
-        }
-        #aboutUs
-        {
-            display: none;
-        }
-        
-        #services .header
-        {
-            background-image: url(Images/wavegrid.png);
-            border-top: 1px solid #CCC;
-            border-bottom: 1px solid #CCC;
-            box-shadow: 0 0 10px #DDD;
-            height: 112px;
-            text-align: center;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-        
-        #services .header .title
-        {
-            background: url('Images/Trid-logo-100.png') no-repeat;
-            cursor: default;
-            height: 100%;
-            margin: 0 auto;
-            width: 260px;
-        }
-        
-        #services .header .title h1
-        {
-            color: #404040;
-            display: inline;
-            font-size: 30pt;
-            line-height: 106px;
-            margin-left: 120px;
-            text-shadow: 1px 1px #909090;
         }
         
         #services .content
         {
             background: url('Images/services_sprite2.png') no-repeat 240px 190px;
-            border: 0px solid blue;
-            color: #757575;
-            cursor: default;
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
             height: 300px;
-            margin: 40px auto;
             margin-bottom: 0;
             text-align: center;
-            text-shadow: 1px 1px #E0E0E0;
-            width: 980px;
-        }
-        #services .content .strong
-        {
-            color: #111;
         }
         
         #services .footer
         {
-            border: 0px solid red;
-            color: #48D;
-            cursor: default;
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
             margin: 40px auto;
             margin-top: 0;
-            text-align: center;
-            text-shadow: 1px 1px #DDD;
-            width: 980px;
-        }
-        
-        #services .footer a
-        {
-            color: #48D;
-            font-family: SegoeUISemiBold, Sans-Serif;
-            text-decoration: none;
-            
-            transition: text-shadow .4s;
-            -moz-transition: text-shadow .4s;
-            -webkit-transition: text-shadow .4s;
-            -o-transition: text-shadow .4s;
-        }
-        
-        #services .footer a:hover
-        {
-            text-shadow: 1px 1px #AAA;
         }
         
         #services .back
         {
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
             margin: 40px auto;
             margin-bottom: 0;
-            text-align: right;
-            width: 980px;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-        #services .back a
-        {
-            background-color: #888;
-            background-image: url('Images/arrow_top_25.png');
-            background-repeat: no-repeat;
-            border: 1px solid #777;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px #CCC;
-            color: #DDD;
-            padding: 2px 10px 2px 25px;
-            text-decoration: none;
-            text-shadow: 1px 1px #666;
-            
-            transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-            -moz-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-            -webkit-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-            -o-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
-        }
-        #services .back a:hover
-        {
-            background-color: #777;
-            border-color: #666;
-            box-shadow: 0px 0px 10px #AAA;
-            text-shadow: 1px 1px #444;
-        }
-        #services .back a:active
-        {
-            box-shadow: 0px 0px 10px #555 inset;
-        }
-        #services
-        {
-            display: none;
-        }
-        
-        #contact .header
-        {
-            background-image: url(Images/wavegrid.png);
-            border-top: 1px solid #CCC;
-            border-bottom: 1px solid #CCC;
-            box-shadow: 0 0 10px #DDD;
-            height: 112px;
-            text-align: center;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-        
-        #contact .header .title
-        {
-            background: url('Images/Trid-logo-100.png') no-repeat;
-            cursor: default;
-            height: 100%;
-            margin: 0 auto;
-            width: 260px;
-        }
-        
-        #contact .header .title h1
-        {
-            color: #404040;
-            display: inline;
-            font-size: 30pt;
-            line-height: 106px;
-            margin-left: 120px;
-            text-shadow: 1px 1px #909090;
         }
         
         #contact .content
         {
-            border: 0px solid blue;
-            color: #757575;
-            cursor: default;
-            font-family: SegoeUILight, Sans-Serif;
-            font-size: 14pt;
             height: 300px;
-            margin: 40px auto;
             margin-bottom: 0;
             text-align: center;
-            text-shadow: 1px 1px #E0E0E0;
-            width: 980px;
-        }
-        #contact .content .strong
-        {
-            color: #111;
         }
         
         #contact .content .social
@@ -596,6 +318,7 @@
             border-radius: 2px;
             box-sizing: border-box;
             font-family: SegoeUILight, Sans-Serif;
+            font-size: 10pt;
             outline: none;
             padding: 5px;
             width: 300px;
@@ -654,18 +377,86 @@
         
         #contact .footer
         {
-            border: 0px solid red;
+            margin: 40px auto;
+        }
+        
+        #contact .back
+        {
+            margin: -40px auto;
+            margin-bottom: 0;
+        }
+        
+        #subpages
+        {
+            border: 0px solid #000;
+            height: 550px;
+            position: absolute;
+            top: 100%;
+            width: 300%;
+        }
+        
+        #subpages .page
+        {
+            display: inline-block;
+            width: 980px;
+        }
+        #subpages .page .header
+        {
+            height: 112px;
+            text-align: center;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        #subpages .page .header .title
+        {
+            background: url('Images/Trid-logo-100.png') no-repeat;
+            cursor: default;
+            height: 100%;
+            margin: 0 auto;
+            width: 260px;
+        }
+        #subpages .page .header .title h1
+        {
+            color: #404040;
+            display: inline;
+            font-size: 30pt;
+            line-height: 106px;
+            margin-left: 120px;
+            text-shadow: 1px 1px #909090;
+        }
+        #subpages .page .content
+        {
+            color: #757575;
+            cursor: default;
+            font-family: SegoeUILight, Sans-Serif;
+            font-size: 14pt;
+            margin-top: 35px;
+            text-shadow: 1px 1px #E0E0E0;
+            width: 980px;
+        }
+        #subpages .page .content .strong
+        {
+            color: #111;
+        }
+        #subpages .page .content div
+        {
+            transition: color .4s;
+            -moz-transition: color .4s;
+            -webkit-transition: color .4s;
+            -o-transition: color .4s;
+        }
+        #subpages .page .footer
+        {
             color: #48D;
             cursor: default;
             font-family: SegoeUILight, Sans-Serif;
             font-size: 14pt;
-            margin: 40px auto;
             text-align: center;
             text-shadow: 1px 1px #DDD;
             width: 980px;
         }
-        
-        #contact .footer a
+        #subpages .page .footer a
         {
             color: #48D;
             font-family: SegoeUISemiBold, Sans-Serif;
@@ -676,25 +467,21 @@
             -webkit-transition: text-shadow .4s;
             -o-transition: text-shadow .4s;
         }
-        
-        #contact .footer a:hover
+        #subpages .page .footer a:hover
         {
             text-shadow: 1px 1px #AAA;
         }
-        
-        #contact .back
+        #subpages .page .back
         {
             font-family: SegoeUILight, Sans-Serif;
             font-size: 14pt;
-            margin: -40px auto;
-            margin-bottom: 0;
             text-align: right;
             width: 980px;
             -moz-user-select: none;
             -webkit-user-select: none;
             user-select: none;
         }
-        #contact .back a
+        #subpages .page .back a
         {
             background-color: #888;
             background-image: url('Images/arrow_top_25.png');
@@ -712,26 +499,40 @@
             -webkit-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
             -o-transition: text-shadow .4s, background-color .4s, border-color .4s, box-shadow .4s;
         }
-        #contact .back a:hover
+        #subpages .page .back a:hover
         {
             background-color: #777;
             border-color: #666;
             box-shadow: 0px 0px 10px #AAA;
             text-shadow: 1px 1px #444;
         }
-        #contact .back a:active
+        #subpages .page .back a:active
         {
             box-shadow: 0px 0px 10px #555 inset;
         }
-        #contact
+        
+        #subpages > .header
         {
-            display: none;
+            background-image: url(Images/wavegrid.png);
+            border-top: 1px solid #CCC;
+            border-bottom: 1px solid #CCC;
+            box-shadow: 0 0 10px #DDD;
+            height: 112px;
+            margin-bottom: -114px;
+        }
+        
+        .transitionable
+        {
+            transition: top 1s, left 1s, margin 1s;
+            -moz-transition: top 1s, left 1s, margin 1s;
+            -webkit-transition: top 1s, left 1s, margin 1s;
+            -o-transition: top 1s, left 1s, margin 1s;
         }
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <div class="page" id="home">
+        <div class="page active transitionable" id="home">
             <div id="header">
                 <div id="logo">
                     <img src="Images/Trid-logo-200.png" alt="Trid logo" />
@@ -739,131 +540,135 @@
             </div>
 
             <div id="menu">
-                <div class="left">
+                <div class="aboutUs">
                     Somos
                     <span class="mark"></span>
                 </div>
-                <div class="center">
+                <div class="services">
                     Fazemos
                     <span class="mark"></span>
                 </div>
-                <div class="right">
+                <div class="contact">
                     Estamos
                     <span class="mark"></span>
                 </div>
             </div>
         </div>
 
-        <div class="page" id="aboutUs">
-            <div class="header">
-                <div class="title">
-                    <h1>Somos</h1>
+        <div id="subpages" class="transitionable">
+            <div class="header"></div>
+
+            <div class="page" id="aboutUs">
+                <div class="header">
+                    <div class="title">
+                        <h1>Somos</h1>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="first">
+                        <p>Desenvolvedores <span class="strong">movidos pela inovação</span> que acreditam no poder da tecnologia em transformar o mundo.</p>
+                    </div>
+                    <div class="second">
+                        <p>Pessoas que discutem novas ideias e querem propor uma <span class="strong">mudança positiva</span> nas atuais soluções de TI.</p>
+                    </div>
+                    <div class="third">
+                        <p>Profissionais com experiência em desenvolvimento de softwares <span class="strong">apaixonados pelo que fazem</span>.</p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div>
+                        Saiba também o que <a href="#Fazemos" class="services">fazemos</a> e onde <a href="#Estamos" class="contact">estamos</a>.
+                    </div>
+                </div>
+
+                <div class="back">
+                    <a href="#">Subir</a>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="first">
-                    <p>Desenvolvedores <span class="strong">movidos pela inovação</span> que acreditam no poder da tecnologia em transformar o mundo.</p>
+            <div class="page" id="services">
+                <div class="header">
+                    <div class="title">
+                        <h1>Fazemos</h1>
+                    </div>
                 </div>
-                <div class="second">
-                    <p>Pessoas que discutem novas ideias e querem propor uma <span class="strong">mudança positiva</span> nas atuais soluções de TI.</p>
+
+                <div class="content">
+                    <div>
+                        <p>
+                            Softwares e aplicativos que <span class="strong">facilitam a vida</span> das pessoas de uma maneira eficiente.
+                        </p>
+                        <p>
+                            De <span class="strong">sites</span> e <span class="strong">sistemas</span> Web a <span class="strong">apps</span> para dispositivos móveis e <span class="strong">extensões</span> para navegadores.
+                        </p>
+                        <p>
+                            Sempre buscamos <span class="strong">excelência</span> nos produtos desenvolvidos, trabalhando com as últimas tecnologias.
+                        </p>
+                        <p>
+                            E, principalmente, <span class="strong">amamos</span> tudo o que fazemos.
+                        </p>
+                    </div>
                 </div>
-                <div class="third">
-                    <p>Profissionais com experiência em desenvolvimento de softwares <span class="strong">apaixonados pelo que fazem</span>.</p>
+
+                <div class="footer">
+                    <div>
+                        Já sabe quem <a href="#Somos" class="aboutUs">somos</a> e onde <a href="#Estamos" class="contact">estamos</a>?
+                    </div>
+                </div>
+
+                <div class="back">
+                    <a href="#">Subir</a>
                 </div>
             </div>
 
-            <div class="footer">
-                <div>
-                    Saiba também o que <a href="#Fazemos" class="services">fazemos</a> e onde <a href="#Estamos" class="contact">estamos</a>.
+            <div class="page" id="contact">
+                <div class="header">
+                    <div class="title">
+                        <h1>Estamos</h1>
+                    </div>
                 </div>
-            </div>
 
-            <div class="back">
-                <a href="#">Subir</a>
-            </div>
-        </div>
-
-        <div class="page" id="services">
-            <div class="header">
-                <div class="title">
-                    <h1>Fazemos</h1>
-                </div>
-            </div>
-
-            <div class="content">
-                <div>
-                    <p>
-                        Softwares e aplicativos que <span class="strong">facilitam a vida</span> das pessoas de uma maneira eficiente.
-                    </p>
-                    <p>
-                        De <span class="strong">sites</span> e <span class="strong">sistemas</span> Web a <span class="strong">apps</span> para dispositivos móveis e <span class="strong">extensões</span> para navegadores.
-                    </p>
-                    <p>
-                        Sempre buscamos <span class="strong">excelência</span> nos produtos desenvolvidos, trabalhando com as últimas tecnologias.
-                    </p>
-                    <p>
-                        E, principalmente, <span class="strong">amamos</span> tudo o que fazemos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div>
-                    Já sabe quem <a href="#Somos" class="aboutUs">somos</a> e onde <a href="#Estamos" class="contact">estamos</a>?
-                </div>
-            </div>
-
-            <div class="back">
-                <a href="#">Subir</a>
-            </div>
-        </div>
-
-        <div class="page" id="contact">
-            <div class="header">
-                <div class="title">
-                    <h1>Estamos</h1>
-                </div>
-            </div>
-
-            <div class="content">
-                <div>
-                    <p>
-                        O mundo é a nossa casa. Estamos online em diversas plataformas. Quer nos conhecer melhor?
-                    </p>
-                </div>
-                <div class="social">
-                    <a href="http://facebook.com/TridOficial" target="_blank"><img src="Images/facebook_59.png" alt="Facebook" /></a>
-                    <a href="http://twitter.com/TridOficial" target="_blank"><img src="Images/twitter_59.png" alt="Facebook" /></a>
-                    <a href="http://linkedin.com/trid" target="_blank"><img src="Images/linkedin_59.png" alt="Facebook" /></a>
-                </div>
-                <div class="form">
-                    <form action="Contact/Send" method="post">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" />
+                <div class="content">
+                    <div>
+                        <p>
+                            O mundo é a nossa casa. Estamos online em diversas plataformas. Quer nos conhecer melhor?
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a href="http://facebook.com/TridOficial" target="_blank"><img src="Images/facebook_59.png" alt="Facebook" /></a>
+                        <a href="http://twitter.com/TridOficial" target="_blank"><img src="Images/twitter_59.png" alt="Facebook" /></a>
+                        <a href="http://linkedin.com/trid" target="_blank"><img src="Images/linkedin_59.png" alt="Facebook" /></a>
+                    </div>
+                    <div class="form">
+                        <form action="Contact/Send" method="post">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" />
                         
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email" />
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" />
                         
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" cols="50" rows="3"></textarea>
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" cols="50" rows="3"></textarea>
 
-                        <div class="buttons">
-                            <input type="reset" name="clear" value="Limpar" />
-                            <input type="submit" name="send" value="Enviar" />
-                        </div>
-                    </form>
+                            <div class="buttons">
+                                <input type="reset" name="clear" value="Limpar" />
+                                <input type="submit" name="send" value="Enviar" />
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
 
-            <div class="footer">
-                <div>
-                    Descubra quem <a href="#Somos" class="aboutUs">somos</a> e o que <a href="#Fazemos" class="services">fazemos</a>.
+                <div class="footer">
+                    <div>
+                        Descubra quem <a href="#Somos" class="aboutUs">somos</a> e o que <a href="#Fazemos" class="services">fazemos</a>.
+                    </div>
                 </div>
-            </div>
 
-            <div class="back">
-                <a href="#">Subir</a>
+                <div class="back">
+                    <a href="#">Subir</a>
+                </div>
             </div>
         </div>
     </div>
@@ -872,94 +677,78 @@
     <script type="text/javascript" language="javascript">
         $(function () {
 
-            var fadeTime = 1000;
-
-
-            $('#menu .left').click(function () {
-                //location.href = 'AboutUs.htm';
-
-                $('#home.page').fadeOut(fadeTime);
-                $('#home.page').css('top', -1000);
-                $('#aboutUs.page').css('top', '50%');
-                $('#aboutUs.page').css('left', 'auto');
-                $('#aboutUs.page').fadeIn(fadeTime);
-            });
-            $('#menu .center').click(function () {
-                $('#home.page').fadeOut(fadeTime);
-                $('#home.page').css('top', -1000);
-                $('#services.page').css('top', '50%');
-                $('#services.page').css('left', 'auto');
-                $('#services.page').fadeIn(fadeTime);
-            });
-            $('#menu .right').click(function () {
-                $('#home.page').fadeOut(fadeTime);
-                $('#home.page').css('top', -1000);
-                $('#contact.page').css('top', '50%');
-                $('#contact.page').css('left', 'auto');
-                $('#contact.page').fadeIn(fadeTime);
+            $(window).resize(function () {
+                calculateAndSetMargins();
+                
+                var item = $('.active')[0].id;
+                activate(item);
             });
 
-            $('#aboutUs .back').click(function () {
-                $('#aboutUs.page').fadeOut(fadeTime);
-                $('#aboutUs.page').css('top', 2000);
-                $('#home.page').css('top', '50%');
-                $('#home.page').fadeIn(fadeTime);
-            });
-            $('#aboutUs .footer .services').click(function () {
-                $('#aboutUs.page').fadeOut(fadeTime);
-                $('#aboutUs.page').css('left', -2000);
-                $('#services.page').css('left', 'auto');
-                $('#services.page').css('top', '50%');
-                $('#services.page').fadeIn(fadeTime);
-            });
-            $('#aboutUs .footer .contact').click(function () {
-                $('#aboutUs.page').fadeOut(fadeTime);
-                $('#aboutUs.page').css('left', -2000);
-                $('#contact.page').css('left', 'auto');
-                $('#contact.page').css('top', '50%');
-                $('#contact.page').fadeIn(fadeTime);
+            var pageLeft, marginLeft;
+            calculateAndSetMargins();
+
+            function calculateAndSetMargins() {
+                var totalWidth = $(window).width();
+                var margins = totalWidth - $('#aboutUs').width();
+
+                marginLeft = margins / 2;
+                pageLeft = $('#aboutUs').width() + marginLeft + 4;
+                $('#subpages > .page').css('margin-left', marginLeft);
+            }
+
+            function toggleHome(show) {
+                if (show) {
+                    $('#home.page').css('top', '50%');
+                    $('#home.page').css('margin-top', '-275px');
+
+                    $('#subpages').css('top', '100%');
+                    $('#subpages').css('margin-top', 0);
+
+                    $('.active').removeClass('active');
+                    $('#home').addClass('active');
+                }
+                else {
+                    $('#home.page').css('top', '-100%');
+                    $('#home.page').css('margin-top', 0);
+
+                    $('#subpages').css('margin-top', '-275px');
+                    $('#subpages').css('top', '50%');
+                }
+            }
+
+            function activate(page) {
+                if (page == 'home') {
+                    toggleHome(true);
+                }
+                else {
+                    toggleHome();
+
+                    var pageMargins = [];
+                    pageMargins["aboutUs"] = 0;
+                    pageMargins["services"] = pageLeft;
+                    pageMargins["contact"] = 2 * pageLeft;
+
+                    var left = '-' + pageMargins[page] + 'px';
+
+                    $('#subpages').css('left', left);
+                }
+                
+                $('.active').removeClass('active');
+                $('#' + page).addClass('active');
+            }
+
+            $('#menu > div').click(function () {
+                var item = $(this).attr('class');
+                activate(item);
             });
 
-            $('#services .back').click(function () {
-                $('#services.page').fadeOut(fadeTime);
-                $('#services.page').css('top', 2000);
-                $('#home.page').css('top', '50%');
-                $('#home.page').fadeIn(fadeTime);
-            });
-            $('#services .footer .aboutUs').click(function () {
-                $('#services.page').fadeOut(fadeTime);
-                $('#services.page').css('left', 2000);
-                $('#aboutUs.page').css('left', 'auto');
-                $('#aboutUs.page').css('top', '50%');
-                $('#aboutUs.page').fadeIn(fadeTime);
-            });
-            $('#services .footer .contact').click(function () {
-                $('#services.page').fadeOut(fadeTime);
-                $('#services.page').css('left', -2000);
-                $('#contact.page').css('left', 'auto');
-                $('#contact.page').css('top', '50%');
-                $('#contact.page').fadeIn(fadeTime);
+            $('.page .footer a').click(function () {
+                var item = $(this).attr('class');
+                activate(item);
             });
 
-            $('#contact .back').click(function () {
-                $('#contact.page').fadeOut(fadeTime);
-                $('#contact.page').css('top', 2000);
-                $('#home.page').css('top', '50%');
-                $('#home.page').fadeIn(fadeTime);
-            });
-            $('#contact .footer .aboutUs').click(function () {
-                $('#contact.page').fadeOut(fadeTime);
-                $('#contact.page').css('left', 2000);
-                $('#aboutUs.page').css('left', 'auto');
-                $('#aboutUs.page').css('top', '50%');
-                $('#aboutUs.page').fadeIn(fadeTime);
-            });
-            $('#contact .footer .services').click(function () {
-                $('#contact.page').fadeOut(fadeTime);
-                $('#contact.page').css('left', 2000);
-                $('#services.page').css('left', 'auto');
-                $('#services.page').css('top', '50%');
-                $('#services.page').fadeIn(fadeTime);
+            $('.page .back a').click(function () {
+                activate('home');
             });
         });
     </script>
