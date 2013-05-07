@@ -283,6 +283,7 @@ body
 
 #contact .content .form
 {
+    background: url('../Images/mail_60_filled.png') no-repeat 500px 40px;
     border: 0px solid green;
     font-size: 12pt;
     margin: 0 auto;

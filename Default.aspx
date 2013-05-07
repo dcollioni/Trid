@@ -113,13 +113,12 @@
                 <div class="content">
                     <div>
                         <p>
-                            O mundo é a nossa casa. Estamos online em diversas plataformas. Quer nos conhecer melhor?
+                            Online em diversas plataformas. Quer nos conhecer melhor? <span class="strong">Adoraremos receber uma mensagem sua.</span>
                         </p>
                     </div>
                     <div class="social">
                         <a href="http://facebook.com/TridOficial" target="_blank"><img src="Images/facebook_59.png" alt="Facebook" /></a>
-                        <a href="http://twitter.com/TridOficial" target="_blank"><img src="Images/twitter_59.png" alt="Facebook" /></a>
-                        <a href="http://linkedin.com/trid" target="_blank"><img src="Images/linkedin_59.png" alt="Facebook" /></a>
+                        <a href="http://twitter.com/TridOficial" target="_blank"><img src="Images/twitter_59.png" alt="Twitter" /></a>
                     </div>
                     <div class="form">
                         <form action="Contact/Send" method="post">
